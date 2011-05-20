@@ -1,3 +1,5 @@
+package org.apache.taglibs.extended;
+
 import java.util.*;
 import java.io.*;
 import java.security.*;
