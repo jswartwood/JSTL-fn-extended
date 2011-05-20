@@ -1,0 +1,215 @@
+<?xml version="1.0" ?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<taglib
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+  <tlib-version>0.2</tlib-version>
+  <jsp-version>2.1</jsp-version>
+  <short-name>extended</short-name>
+  <uri>http://jakarta.apache.org/taglibs/extended</uri>
+  <display-name>Apache Extended Tag library</display-name>
+
+  <description>
+    The Extended Tag Library is a collection of tags and functions to be used in addition to the Standard tag library. 
+  </description> 
+
+  <!-- Commons Lang StringUtils functions -->
+  <function>
+    <name>capitalize</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String capitalize(java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>uncapitalize</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String uncapitalize(java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>lastIndexOf</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      int lastIndexOf(java.lang.String, java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>left</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String left(java.lang.String, int)
+    </function-signature>
+  </function>
+  <function>
+    <name>mid</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String mid(java.lang.String, int)
+    </function-signature>
+  </function>
+  <function>
+    <name>right</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String right(java.lang.String, int)
+    </function-signature>
+  </function>
+  <function>
+    <name>repeat</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String repeat(java.lang.String, int)
+    </function-signature>
+  </function>
+  <function>
+    <name>leftPad</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String leftPad(java.lang.String, int, java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>rightPad</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String rightPad(java.lang.String, int, java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>center</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String center(java.lang.String, int, java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>abbreviate</name>
+    <function-class>org.apache.commons.lang.StringUtils</function-class>
+    <function-signature>
+      java.lang.String abbreviate(java.lang.String, int)
+    </function-signature>
+  </function>
+
+  <!-- Commons Lang WordUtils functions -->
+  <function>
+    <name>capitalizeAllWords</name>
+    <function-class>org.apache.commons.lang.WordUtils</function-class>
+    <function-signature>
+      java.lang.String capitalize(java.lang.String)
+    </function-signature>
+  </function>
+
+  <!-- Defined in this Taglib -->
+  <function>
+    <name>replaceAll</name>
+    <function-class>org.apache.taglibs.extended.RegexFunction</function-class>
+    <function-signature>
+      java.lang.String replaceAll(java.lang.String, java.lang.String, java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>replaceFirst</name>
+    <function-class>org.apache.taglibs.extended.RegexFunction</function-class>
+    <function-signature>
+      java.lang.String replaceFirst(java.lang.String, java.lang.String, java.lang.String)
+    </function-signature>
+  </function>
+
+  <!-- java.lang.Math functions -->
+  <function>
+    <name>ceil</name>
+    <function-class>java.lang.Math</function-class>
+    <function-signature>
+      double ceil(double)
+    </function-signature>
+  </function>
+  <function>
+    <name>floor</name>
+    <function-class>java.lang.Math</function-class>
+    <function-signature>
+      double floor(double)
+    </function-signature>
+  </function>
+  <function>
+    <name>round</name>
+    <function-class>java.lang.Math</function-class>
+    <function-signature>
+      long round(double)
+    </function-signature>
+  </function>
+  <function>
+    <name>sqrt</name>
+    <function-class>java.lang.Math</function-class>
+    <function-signature>
+      double sqrt(double)
+    </function-signature>
+  </function>
+
+  <!-- java.lang.System -->
+  <function>
+    <name>env</name>
+    <function-class>java.lang.System</function-class>
+    <function-signature>
+      java.lang.String getenv(java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>property</name>
+    <function-class>java.lang.System</function-class>
+    <function-signature>
+      java.lang.String property(java.lang.String)
+    </function-signature>
+  </function>
+
+  <!-- java.net.URLEncoder/URLDecoder -->
+  <function>
+    <name>encode</name>
+    <function-class>java.net.URLEncoder</function-class>
+    <function-signature>
+      java.lang.String encode(java.lang.String, java.lang.String)
+    </function-signature>
+  </function>
+  <function>
+    <name>decode</name>
+    <function-class>java.net.URLDecoder</function-class>
+    <function-signature>
+      java.lang.String decode(java.lang.String, java.lang.String)
+    </function-signature>
+  </function>
+
+  <!-- Defined in this taglib -->
+  <function>
+    <name>md5hex</name>
+    <function-class>org.apache.taglibs.extended.MD5Util</function-class>
+    <function-signature>
+      java.lang.String md5hex(java.lang.String)
+    </function-signature>
+  </function>
+
+  <!-- Also of interest: -->
+  <!-- StopWatch - measure speed of parts of a JSP page. Use Tags -->
+  <!-- DurationFormatUtils - might be an interesting EL function -->
+  <!-- NumberUtils -->
+  <!-- BSF Taglib converted to javax.script dependency -->
+
+</taglib>
