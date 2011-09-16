@@ -205,6 +205,14 @@
       java.lang.String md5hex(java.lang.String)
     </function-signature>
   </function>
+  <function>
+    <name>fetchUrl</name>
+    <function-class>org.apache.taglibs.extended.FetchUrl</function-class>
+    <function-signature>
+      java.lang.String fetch(java.lang.String)
+    </function-signature>
+  </function>
+  
 
   <!-- Also of interest: -->
   <!-- StopWatch - measure speed of parts of a JSP page. Use Tags -->
