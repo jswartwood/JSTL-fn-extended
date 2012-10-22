@@ -11,11 +11,11 @@ Copy extended.jar from lib into your application lib folder.
 API
 ---
 ### Commons Lang StringUtils functions
-- **Capitalize** =>
+- **capitalize** =>
   ```java
   java.lang.String capitalize(java.lang.String)
   ```
-- **Uncapitalize** =>
+- **uncapitalize** =>
   ```java
   java.lang.String uncapitalize(java.lang.String)
   ```
