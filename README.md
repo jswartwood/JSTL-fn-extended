@@ -11,113 +11,113 @@ Copy extended.jar from lib into your application lib folder.
 API
 ---
 ### Commons Lang StringUtils functions
-- *Capitalize* =>
+- **Capitalize** =>
   ```java
   java.lang.String capitalize(java.lang.String)
   ```
-- *Uncapitalize* =>
+- **Uncapitalize** =>
   ```java
   java.lang.String uncapitalize(java.lang.String)
   ```
-- *lastIndexOf* =>
+- **lastIndexOf** =>
   ```java
   int lastIndexOf(java.lang.String, java.lang.String)
   ```
-- *left* =>
+- **left** =>
   ```java
   java.lang.String left(java.lang.String, int)
   ```
-- *mid* =>
+- **mid** =>
   ```java
   java.lang.String mid(java.lang.String, int)
   ```
-- *right* =>
+- **right** =>
   ```java
   java.lang.String right(java.lang.String, int)
   ```
-- *repeat* =>
+- **repeat** =>
   ```java
   java.lang.String repeat(java.lang.String, int)
   ```
-- *leftPad* =>
+- **leftPad** =>
   ```java
   java.lang.String leftPad(java.lang.String, int, java.lang.String)
   ```
-- *rightPad* =>
+- **rightPad** =>
   ```java
   java.lang.String rightPad(java.lang.String, int, java.lang.String)
   ```
-- *center* =>
+- **center** =>
   ```java
   java.lang.String center(java.lang.String, int, java.lang.String)
   ```
-- *abbreviate* =>
+- **abbreviate** =>
   ```java
   java.lang.String abbreviate(java.lang.String, int)
   ```
 
 ### Commons Lang WordUtils functions
-- *capitalizeAllWords* =>
+- **capitalizeAllWords** =>
   ```java
   java.lang.String capitalize(java.lang.String)
   ```
 
 ### Regex String Replacement
-- *replaceAll* =>
+- **replaceAll** =>
   ```java
   java.lang.String replaceAll(java.lang.String, java.lang.String, java.lang.String)
   ```
-- *replaceFirst* =>
+- **replaceFirst** =>
   ```java
   java.lang.String replaceFirst(java.lang.String, java.lang.String, java.lang.String)
   ```
 
 ### java.lang.Math functions
-- *ceil* =>
+- **ceil** =>
   ```java
   double ceil(double)
   ```
-- *floor* =>
+- **floor** =>
   ```java
   double floor(double)
   ```
-- *round* =>
+- **round** =>
   ```java
   long round(double)
   ```
-- *sqrt* =>
+- **sqrt** =>
   ```java
   double sqrt(double)
   ```
 
 ### java.lang.System
-- *env* =>
+- **env** =>
   ```java
   java.lang.String getenv(java.lang.String)
   ```
-- *property* =>
+- **property** =>
   ```java
   java.lang.String property(java.lang.String)
   ```
 
 ### java.net.URLEncoder/URLDecoder
-- *encode* =>
+- **encode** =>
   ```java
   java.lang.String encode(java.lang.String, java.lang.String)
   ```
-- *decode* =>
+- **decode** =>
   ```java
   java.lang.String decode(java.lang.String, java.lang.String)
   ```
 
 ### MD5 Hex encoding
-- *md5hex* =>
+- **md5hex** =>
   ```java
   java.lang.String md5hex(java.lang.String)
   ```
 
 ### Weak URL fetch and cache
-- *fetchUrl* =>
+- **fetchUrl** =>
   ```java
   java.lang.String fetch(java.lang.String)
   ```
